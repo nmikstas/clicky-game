@@ -1,0 +1,6 @@
+.status-bar
+{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(21, 17, 238, .9),  rgba(83, 16, 240, 0.9));
+    padding: 10px;
+}
