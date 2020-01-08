@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "Brett Sweat",
-    "image": "/img/gpk1.png"
+    "image": "./img/gpk1.png"
   },
   {
     "id": 2,
     "name": "Haley Comet",
-    "image": "/img/gpk2.png"
+    "image": "./img/gpk2.png"
   },
   {
     "id": 3,
     "name": "Screwey Dewey",
-    "image": "/img/gpk3.png"
+    "image": "./img/gpk3.png"
   },
   {
     "id": 4,
     "name": "Stuck Chuck",
-    "image": "/img/gpk4.png"
+    "image": "./img/gpk4.png"
   },
   {
     "id": 5,
     "name": "Dribblin' Derek",
-    "image": "/img/gpk5.png"
+    "image": "./img/gpk5.png"
   },
   {
     "id": 6,
     "name": "Windy Winston",
-    "image": "/img/gpk6.png"
+    "image": "./img/gpk6.png"
   },
   {
     "id": 7,
     "name": "Stoned Sean",
-    "image": "/img/gpk7.png"
+    "image": "./img/gpk7.png"
   },
   {
     "id": 8,
     "name": "Ground Chuck",
-    "image": "/img/gpk8.png"
+    "image": "./img/gpk8.png"
   },
   {
     "id": 9,
     "name": "Dead Ted",
-    "image": "/img/gpk9.png"
+    "image": "./img/gpk9.png"
   },
   {
     "id": 10,
     "name": "Peeled Paul",
-    "image": "/img/gpk10.png"
+    "image": "./img/gpk10.png"
   },
   {
     "id": 11,
     "name": "Russ Puss",
-    "image": "/img/gpk11.png"
+    "image": "./img/gpk11.png"
   },
   {
     "id": 12,
     "name": "Banana Anna",
-    "image": "/img/gpk12.png"
+    "image": "./img/gpk12.png"
   }
 ]
