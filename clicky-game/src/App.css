@@ -41,7 +41,7 @@ html,
 body {
   height: 100%;
   font-family: sans-serif;
-  background-image: url("/img/tiles.png");
+  background-image: url("./img/tiles.png");
   background-size: 100px 100px;
 }
 
