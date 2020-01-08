@@ -3,6 +3,7 @@
     width: 100%;
     text-align: center;
     background-image: linear-gradient(to right, rgba(83, 16, 240, 0.9), rgba(21, 17, 238, .9));
+    border-radius: 10px;
 }
 
 p

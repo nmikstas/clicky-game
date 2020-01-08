@@ -6,7 +6,7 @@ const TitleBar = () =>
     return (
         <div className="title container-fluid">
             <p>
-                Click the images only once to earn points! 
+                Click the Images Only Once to Earn Points! 
             </p>
         </div>
     );

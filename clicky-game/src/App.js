@@ -5,12 +5,12 @@ import gpk from "./cards.json";
 import "./App.css";
 import StatusBar from "./components/StatusBar";
 
-
 class App extends Component
 {
     state =
     {
         deck: [],
+        clickedIds: [],
         score: 0,
         hiScore: 0,
         gameMessage: "Click an Image to Begin!"
@@ -47,7 +47,8 @@ class App extends Component
         this.shuffleDeck();
 
         this.setState(
-        { 
+        {
+            clickedIds: [],
             score: 0,
             hiScore: 0,
             gameMessage: "Click an Image to Begin!"
@@ -74,15 +75,16 @@ class App extends Component
                         hiScore={this.state.hiScore}
                     />
                     
-                    {this.state.deck.map(card => (
+                    {this.state.deck.map(card =>
+                    (
                         <GPKCard
                             clickCard={this.clickCard}
                             id={card.id}
                             key={card.id}
                             name={card.name}
                             image={card.image}
-                    />
-                ))}
+                        />
+                    ))}
                 </div>
             </div>
         );

@@ -4,12 +4,18 @@ import "./style.css";
 const StatusBar = (props) =>
 {
     return (
-        <div className="status-bar">
-            <button className="btn btn-outline-danger" onClick={ () => props.resetGame() }>Reset Game</button>
-          
-            <span className="message">{props.message}</span>
-            <span className="score">Your Score: {props.score} | </span>
-            <span className="hi-score">High Score: {props.hiScore}</span>
+        <div className="status-bar row">
+            <div className="col-md-2 button">
+                <button className="btn btn-outline-danger" onClick={ () => props.resetGame() }>Reset Game</button>
+            </div>
+
+            <div className="col-md-5 message">
+                {props.message}
+            </div>
+            
+            <div className="col-md-5 score">
+                Your Score: {props.score} | High Score: {props.hiScore}
+            </div>
         </div>
     );
 }
