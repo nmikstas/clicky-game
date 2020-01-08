@@ -13,7 +13,8 @@ class App extends Component
         clickedIds: [],
         score: 0,
         hiScore: 0,
-        gameMessage: "Click an Image to Begin!"
+        gameMessage: "Click an Image to Begin!",
+        clickResult: "reset"
     };
 
     //Runs after component is loaded.
@@ -51,13 +52,53 @@ class App extends Component
             clickedIds: [],
             score: 0,
             hiScore: 0,
-            gameMessage: "Click an Image to Begin!"
+            gameMessage: "Click an Image to Begin!",
+            clickResult: "reset"
         });
     }
 
     //Check card click and randomize cards.
-    clickCard = () =>
+    clickCard = (id) =>
     {
+        let score = this.state.score + 1;
+        let hiScore = this.state.hiScore;
+        let clickedIds = [];
+
+        //Copy clickedId array to new array.
+        for(let i = 0; i < this.state.clickedIds.length; i++)
+        {
+            clickedIds.push(this.state.clickedIds[i]);
+        }
+
+        if(hiScore < score)
+        {
+            hiScore = score;
+        }
+
+        if(clickedIds.includes(id))
+        {
+            this.setState(
+            { 
+                clickedIds: [],
+                score: 0,
+                gameMessage: "Already Clicked!",
+                clickResult: "bad"
+            });
+        }
+        else
+        {
+            clickedIds.push(id);
+
+            this.setState(
+            { 
+                clickedIds: clickedIds,
+                score: score,
+                hiScore: hiScore,
+                gameMessage: "Good Guess!",
+                clickResult: "good"
+            });
+        }
+
         this.shuffleDeck();
     }
 
@@ -69,6 +110,7 @@ class App extends Component
                 <div className="container">
                     <StatusBar
                         key={100}
+                        clickResult={this.state.clickResult}
                         resetGame={this.resetGame}
                         message={this.state.gameMessage}
                         score={this.state.score}
